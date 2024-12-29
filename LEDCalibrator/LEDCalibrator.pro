@@ -13,6 +13,7 @@ SOURCES += \
     Led/leds.cpp \
     UI/colorgrid.cpp \
     Utils/color.cpp \
+    Utils/triangle.cpp \
     main.cpp \
     mainwindow.cpp
 
@@ -21,6 +22,7 @@ HEADERS += \
     Led/leds.h \
     UI/colorgrid.h \
     Utils/color.h \
+    Utils/triangle.h \
     mainwindow.h
 
 FORMS += \

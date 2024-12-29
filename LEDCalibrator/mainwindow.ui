@@ -30,11 +30,6 @@
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
-          <widget class="QGroupBox" name="groupBox_2">
-           <property name="title">
-            <string>ColorGrid</string>
-           </property>
-          </widget>
           <widget class="QGroupBox" name="groupBox_4">
            <property name="title">
             <string>LEDS</string>
@@ -56,6 +51,16 @@
             </item>
             <item row="1" column="0" colspan="2">
              <widget class="QTableWidget" name="tableWidget">
+              <column>
+               <property name="text">
+                <string>ID</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ENABLE</string>
+               </property>
+              </column>
               <column>
                <property name="text">
                 <string>Name</string>
@@ -89,6 +94,21 @@
               <column>
                <property name="text">
                 <string>B</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>DISTANCE</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>OUTPUT %</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>OUTPUT</string>
                </property>
               </column>
              </widget>
