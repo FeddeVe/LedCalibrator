@@ -25,13 +25,15 @@ void ColorGrid::paintEvent(QPaintEvent *event)
 
     for(int x = 0; x < width; x++){
         for(int y = 0; y < height; y++){
+            float gridX = static_cast<float>(x)/width;
+            float gridY = static_cast<float>(y)/height;
 
+            Color c(gridX, 1.0-gridY);
+            pointPen.setColor(c.qColor());
+            painter.setPen(pointPen);
+            painter.drawPoint(x,y);
         }
     }
-
-    painter.drawPoint(0,0);
-painter.drawPoint(1,1);
-painter.drawPoint(4,4);
 
     painter.end();
 }

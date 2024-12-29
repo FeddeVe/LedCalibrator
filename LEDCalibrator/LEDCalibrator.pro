@@ -9,12 +9,16 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Led/led.cpp \
+    Led/leds.cpp \
     UI/colorgrid.cpp \
     Utils/color.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
+    Led/led.h \
+    Led/leds.h \
     UI/colorgrid.h \
     Utils/color.h \
     mainwindow.h
